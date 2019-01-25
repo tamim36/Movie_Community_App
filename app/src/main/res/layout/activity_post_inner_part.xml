@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#bd000b02"
+    tools:context=".Post_inner_part">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/add_btn"
+
+            />
+        <TextView
+            android:id="@+id/inner_post_title"
+            android:layout_below="@+id/image_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="MovieTitle"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/inner_post_genre"
+            android:layout_below="@+id/inner_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Romantic, Tragedy"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/inner_post_year"
+            android:layout_below="@+id/inner_post_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="2018"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/starimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star2"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/image_post"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/inner_post_rating"
+            android:layout_below="@+id/starimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:text="8.7"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/inner_post_desc"
+            android:layout_below="@+id/inner_post_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="aaaaaaaaaaaaaaaaaaa aaaaaaaa guyguyguguyg"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            />
+        <ImageButton
+
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/inner_post_desc"
+            android:layout_marginTop="30dp"
+            android:id="@+id/review_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsz_rev_img_btn1"
+            android:gravity="center"
+            android:background="@drawable/rsz_rev_img_btn1"
+            android:layout_marginLeft="110dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
